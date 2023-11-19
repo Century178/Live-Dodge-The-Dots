@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public static Player Instance; //There is only one player, so we can call a static instance.
+    public static Player Instance { get; private set; } //We want other scripts to access this script, but only this script to set itself.
 
-    [SerializeField] private float _moveSpeed; //[SerializeField] makes variables visible in the inspector.
+    [SerializeField] private float _moveSpeed = 5f; //[SerializeField] makes variables visible in the inspector.
     private float _movement;
     
-    [SerializeField] private float _jumpForce;
+    [SerializeField] private float _jumpForce = 5f;
     private bool _isJumping;
 
     [HideInInspector] public bool _isDead = false; //[HideInInspector] makes variables hidden from the inspector.
