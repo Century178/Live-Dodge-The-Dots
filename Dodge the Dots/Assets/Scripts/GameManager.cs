@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI; //You can use TextMesh Pro instead; download the TextMesh Pro package then import TMPro.
+using UnityEngine.UI; //You can use TextMesh Pro instead; download the TextMesh Pro package then type "using TMPro;".
 
 public class GameManager : MonoBehaviour
 {
